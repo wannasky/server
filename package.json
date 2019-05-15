@@ -1,7 +1,7 @@
 {
   "name": "@wannasky/server",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "node 代理服务器 路由配置等",
   "scripts": {},
   "keywords": [
     "proxy",
@@ -9,7 +9,7 @@
     "router"
   ],
   "bin": {
-    "dest": "./bin/wserver"
+    "wserver": "./bin/wserver"
   },
   "author": "wannasky",
   "license": "MIT",
