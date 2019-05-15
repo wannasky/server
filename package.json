@@ -1,0 +1,26 @@
+{
+  "name": "@wannasky/server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [
+    "proxy",
+    "server",
+    "router"
+  ],
+  "bin": {
+    "dest": "./bin/wserver"
+  },
+  "author": "wannasky",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "corser": "^2.0.1",
+    "http-proxy": "^1.17.0",
+    "memory-fs": "^0.4.1",
+    "mime": "^2.4.2",
+    "union": "^0.5.0"
+  }
+}

@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+const commander = require('commander');
+const config = require('../lib/core/config');
+const server = require('../lib/core/server');
+
+process.on('unhandledRejection', error => {
+    throw error;
+});
+
+['SIGINT', 'SIGTERM'].forEach(sig => {
+    process.on(sig, () => {
+        process.exit();
+    });
+});
+
+commander
+    .version(require('../package').version)
+    .option('-c, --config [path]', '配置文件')
+    .option('-m, --memory [value]', '从内存读取静态文件')
+    .parse(process.argv);
+
+server(config(commander));
