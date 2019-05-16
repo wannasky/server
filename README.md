@@ -15,6 +15,8 @@ module.exports = {
     port: 8989,     // 端口号
     
     memory: false,  // 静态资源是否从内存读取，memory-fs ，默认 false
+    
+    liveReload: false, //是否文件变化(root下），自动刷新，memory模式下不生效
 
     proxy: {
         '/api/one': {

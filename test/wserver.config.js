@@ -4,6 +4,8 @@ module.exports = {
 
     port: 8989,
 
+    liveReload: true,
+
     proxy: {
 
     },
