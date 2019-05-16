@@ -1,7 +1,7 @@
 {
   "name": "@wannasky/server",
   "version": "2.1.0",
-  "description": "node 代理服务器 路由配置等",
+  "description": "node 代理服务器 路由配置 liveReload等",
   "scripts": {},
   "keywords": [
     "proxy",
