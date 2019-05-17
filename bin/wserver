@@ -2,7 +2,7 @@
 
 const commander = require('commander');
 const config = require('../lib/core/config');
-const server = require('../lib/core/server');
+const {createServer} = require('../lib/core/server');
 
 process.on('unhandledRejection', error => {
     throw error;
@@ -20,4 +20,4 @@ commander
     .option('-m, --memory [value]', '从内存读取静态文件')
     .parse(process.argv);
 
-server(config(commander));
+createServer(config(commander));
