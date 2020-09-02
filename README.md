@@ -49,7 +49,10 @@ module.exports = {
             }
         }
         
-    }
+    },
+    
+    try_files: './index.html'  // try files
+
 }
 
 ```
